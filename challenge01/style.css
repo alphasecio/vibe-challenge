@@ -1,0 +1,119 @@
+body {
+  background: #f9f9f9;
+  padding: 2rem;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 1rem auto;
+}
+
+li {
+  position: relative;
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem 3rem 1rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#plus-row {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+}
+
+#plus-row .plus {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+#plus-row input {
+  flex: 1;
+  padding: 0.4rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+#plus-row button {
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+}
+
+#plus-row input,
+#plus-row button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+#plus-row input:focus {
+  box-shadow: 0 0 0 2px rgba(78, 205, 196, 0.4); /* soft turquoise glow */
+  border-radius: 6px;
+}
+
+#plus-row button:hover {
+  background: rgba(255, 230, 109, 0.3); /* soft highlight */
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+input[type="checkbox"] {
+  margin-right: 1rem;
+  transform: scale(1.4);
+}
+
+.text {
+  vertical-align: middle;
+}
+
+.car {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scaleX(-1);
+  opacity: 0;
+  font-size: 1.5rem;
+  transition: transform 1s ease, opacity 0.2s;
+}
+
+.car.zoom {
+  opacity: 1;
+  transform: translate(400px, -50%) scaleX(-1);
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  animation: fall 2s linear forwards;
+}
+
+@keyframes fall {
+  0%   { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(200px) rotate(720deg); opacity: 0; }
+}
+
+li.done .text {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #888;
+}
+
+li.done input[type="checkbox"] {
+  accent-color: #aaa;   /* supported in modern browsers */
+}
+
+body, input, button, textarea {
+  font-family: 'Nunito', sans-serif;
+}
