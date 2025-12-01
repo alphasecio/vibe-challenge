@@ -26,7 +26,14 @@ A minimalist web app to save and categorize web links with automatic article sum
 ### ⚙️ Environment Variables
 Required by Google Cloud Run (ideally, as secret references) or `.env` for local deployment.
 * `GOOGLE_CLOUD_PROJECT`=`your-gcp-project-id`
-* `GOOGLE_CLOUD_LOCATION`=`us-central1` (or your cloud region
+* `GOOGLE_CLOUD_LOCATION`=`your-gcp-region`
+
+
+### 👤 Identity & Access Management
+Create a new service account `linkwise-sa` in your project, and assign the following roles. Use this account for Cloud Run service deployment.
+* `Secret Manager Secret Accessor`
+* `Vertex AI User`
+* `Cloud Datastore User`
 
 
 ### 🔐 Firebase Authentication & Frontend Setup
