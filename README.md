@@ -32,7 +32,29 @@ A minimalist web app to save and categorize web links with automatic article sum
   * **Vanilla JavaScript** for dynamic behavior
 * **Backend**
   * **Flask (Python)** for backend API
-  * **Firebase Authentication** for frontend user authentication and token issuance
+  * **Firebase Authentication** for frontend user authentication
+  * **BeautifulSoup** for content extraction from links
+  * **Gemini on Vertex AI** for generating summaries, titles and tags
+  * **Firestore Database** for storing links, summaries, titles and tags
+
+## Challenge 03: 🎯 VibeSuite
+A unified SaaS application combining Turbo-Do task management and Linkwise link aggregation with AI-powered features.
+
+### ✨ Features
+* **Single Sign-On**: One account for all productivity tools
+* **🏁 Turbo-Do**: Race-themed to-do list with completion animations
+* **📚 Linkwise**: AI-powered link saving with automatic summaries and tags
+* **Tab Navigation**: Seamless switching between tools
+* **Responsive Design**: Works beautifully on all devices
+
+### 🛠️ Tech Stack
+* **Frontend**
+  * **HTML5** for structure  
+  * **CSS3** for layout, animations, and styling  
+  * **Vanilla JavaScript** for dynamic behavior
+* **Backend**
+  * **Flask (Python)** for backend API
+  * **Firebase Authentication** for user authentication
   * **BeautifulSoup** for content extraction from links
   * **Gemini on Vertex AI** for generating summaries, titles and tags
   * **Firestore Database** for storing links, summaries, titles and tags
